@@ -5,7 +5,7 @@ if (any (install_package ==  FALSE))
   install.packages(packages[!install_package])
 
 sapply(packages, require, character.only = TRUE)
-vaccine_data <- read.csv("C:/Users/dimav/Desktop/pet_proj/R-WebApp/country_vaccinations.csv")
+vaccine_data <- read.csv("/country_vaccinations.csv")
 head (vaccine_data)
 str(vaccine_data)
 dim (vaccine_data)
